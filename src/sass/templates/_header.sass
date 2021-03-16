@@ -1,0 +1,49 @@
+.header
+  width: 100%
+  position: fixed
+  &-top
+    padding-top: 14px
+    padding-bottom: 9px
+    display: flex
+    justify-content: space-between
+  &-logo
+    font-weight: 700
+    font-size: 24px
+    color: $black
+    transition: .2s
+    &:hover
+      transition: .2s
+      color: $blue
+    &-description
+      font-weight: 200
+      font-size: 12px
+  &-contact
+    display: flex
+    flex-direction: column
+    a
+      font-weight: 700
+      font-size: 18px
+      text-align: right
+      color: $black
+    a:nth-child(2)
+      font-weight: 400
+      font-size: 16px
+      border-bottom: 1px dotted #000
+  &-nav
+    &-wraper
+      background-color: $gray
+      padding: 0
+    ul
+      width: 100%
+      display: flex
+      justify-content: space-around
+      li
+        a
+          padding: 0
+          padding-top: 11px
+          padding-bottom: 11px
+          font-size: 12px
+          font-weight: 400 
+          // точно font-weight: 400???? в макете 400, но по ощущениям больше
+          line-height: 14.06px
+          color: $black

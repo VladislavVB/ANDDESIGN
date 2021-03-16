@@ -1,4 +1,304 @@
-h1 {
-  color: #566570;
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+* {
+  font-family: 'Montserrat', sans-serif;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+.padd-card {
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.button {
+  background-color: #0075FF;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 700;
+  border: none;
+  width: 308px;
+  height: 50px;
+}
+
+.section {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.section-title {
+  font-weight: 700;
+  font-size: 24px;
+  text-align: center;
+}
+
+.section-description {
+  margin-top: 8px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.header {
+  width: 100%;
+  position: fixed;
+}
+
+.header-top {
+  padding-top: 14px;
+  padding-bottom: 9px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.header-logo {
+  font-weight: 700;
+  font-size: 24px;
+  color: #000;
+  -webkit-transition: .2s;
+  transition: .2s;
+}
+
+.header-logo:hover {
+  -webkit-transition: .2s;
+  transition: .2s;
+  color: #0075FF;
+}
+
+.header-logo-description {
+  font-weight: 200;
+  font-size: 12px;
+}
+
+.header-contact {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.header-contact a {
+  font-weight: 700;
+  font-size: 18px;
+  text-align: right;
+  color: #000;
+}
+
+.header-contact a:nth-child(2) {
+  font-weight: 400;
+  font-size: 16px;
+  border-bottom: 1px dotted #000;
+}
+
+.header-nav-wraper {
+  background-color: #C4C4C4;
+  padding: 0;
+}
+
+.header-nav ul {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.header-nav ul li a {
+  padding: 0;
+  padding-top: 11px;
+  padding-bottom: 11px;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 14.06px;
+  color: #000;
+}
+
+.hero {
+  background: #F8F8F8 url("../img/Union.jpg") center center no-repeat;
+  background-size: 42%;
+  margin-top: -25px;
+  min-height: 524px;
+}
+
+.hero-wraper {
+  width: 100%;
+  height: 100%;
+  padding-top: 127px;
+  max-width: 951px;
+  margin: auto;
+  text-align: center;
+}
+
+.hero-wraper h1 {
+  font-weight: 700;
+  font-size: 48px;
+  margin-bottom: 31px;
+}
+
+.hero-wraper p {
+  font-size: 24px;
+  line-height: 36px;
+  font-weight: 400;
+  margin-bottom: 31px;
+}
+
+.services-card {
+  margin-top: 41px;
+  height: 100%;
+}
+
+.services-card-img {
+  max-height: 243px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  overflow: hidden;
+  background-color: #F8F8F8;
+}
+
+.services-card-img img {
+  width: 100%;
+  padding: 19px;
+}
+
+.services-card-description {
+  margin-top: 15px;
+}
+
+.services-card-description p {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+  margin: 0;
+}
+
+.services-card-description p:nth-child(2) {
+  font-weight: 400;
+}
+
+.remotely {
+  background-color: #F8F8F8;
+}
+
+.remotely-cards {
+  margin-top: 25px;
+}
+
+.remotely-card {
+  position: relative;
+  background-color: #e3e3e3;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  overflow: hidden;
+  max-height: 179.51px;
+}
+
+.remotely-card-big {
+  height: 100%;
+  max-height: 390px;
+  width: 100%;
+}
+
+.remotely-card-big img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  padding: 37px !important;
+}
+
+.remotely-card a {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #000;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+}
+
+.remotely-card img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  padding: 11.5px;
+}
+
+.calculate-content {
+  margin-top: 43px;
+}
+
+.calculate-description {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.calculate-description-wraper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.calculate-card p {
+  margin: 0;
+  line-height: 24px;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.calculate-card p:nth-child(2n) {
+  margin-bottom: 27px;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 36px;
+}
+
+.calculate-card p:nth-child(6n) {
+  margin-bottom: 0;
 }
 /*# sourceMappingURL=style.css.map */
