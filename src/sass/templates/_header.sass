@@ -3,6 +3,19 @@
   position: fixed
   z-index: 10
   background-color: $white
+  &-mail
+    &-link
+      text-align: right
+      a
+        display: inline-block
+        font-weight: 400
+        font-size: 16px
+        border-bottom: 1px dotted $black
+        font-weight: 400 !important
+        font-size: 16px !important
+        &:hover
+          color: $blue
+          border-bottom: 1px dotted $blue
   &-top
     padding-top: 14px
     padding-bottom: 9px
@@ -27,15 +40,18 @@
       font-size: 18px
       text-align: right
       color: $black
-    a:nth-child(2)
-      font-weight: 400
-      font-size: 16px
-      border-bottom: 1px dotted #000
+      transition: .5s
+      &:hover
+        color: $blue
+        transition: .5s
+
+      
   &-nav
     &-wraper
       background-color: $gray
       padding: 0
       margin-bottom: -20px
+      margin-top: 9px
     ul
       width: 100%
       display: flex
@@ -46,7 +62,7 @@
           padding-top: 11px
           padding-bottom: 11px
           font-size: 12px
-          font-weight: 400 
+          font-weight: 600 
           // точно font-weight: 400???? в макете 400, но по ощущениям больше
           line-height: 14.06px
           color: $black

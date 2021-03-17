@@ -7,8 +7,20 @@ a:hover {
   text-decoration: none;
 }
 
+button {
+  -webkit-transition: .2s;
+  transition: .2s;
+}
+
 button:hover {
   cursor: pointer;
+  -webkit-box-shadow: 0px 5px 10px 3px rgba(0, 117, 255, 0.2);
+          box-shadow: 0px 5px 10px 3px rgba(0, 117, 255, 0.2);
+  -webkit-transition: .2s;
+  transition: .2s;
+  color: #0075FF;
+  background-color: #fff;
+  border: 2px solid #0075FF;
 }
 
 .padd-card {
@@ -56,6 +68,24 @@ button:hover {
   background-color: #fff;
 }
 
+.header-mail-link {
+  text-align: right;
+}
+
+.header-mail-link a {
+  display: inline-block;
+  font-weight: 400;
+  font-size: 16px;
+  border-bottom: 1px dotted #000;
+  font-weight: 400 !important;
+  font-size: 16px !important;
+}
+
+.header-mail-link a:hover {
+  color: #0075FF;
+  border-bottom: 1px dotted #0075FF;
+}
+
 .header-top {
   padding-top: 14px;
   padding-bottom: 9px;
@@ -101,18 +131,21 @@ button:hover {
   font-size: 18px;
   text-align: right;
   color: #000;
+  -webkit-transition: .5s;
+  transition: .5s;
 }
 
-.header-contact a:nth-child(2) {
-  font-weight: 400;
-  font-size: 16px;
-  border-bottom: 1px dotted #000;
+.header-contact a:hover {
+  color: #0075FF;
+  -webkit-transition: .5s;
+  transition: .5s;
 }
 
 .header-nav-wraper {
   background-color: #C4C4C4;
   padding: 0;
   margin-bottom: -20px;
+  margin-top: 9px;
 }
 
 .header-nav ul {
@@ -129,7 +162,7 @@ button:hover {
   padding-top: 11px;
   padding-bottom: 11px;
   font-size: 12px;
-  font-weight: 400;
+  font-weight: 600;
   line-height: 14.06px;
   color: #000;
 }
@@ -647,6 +680,15 @@ button:hover {
 .footer-mail a {
   border-bottom: 1px dashed #C4C4C4;
   color: #000;
+  -webkit-transition: .2s;
+  transition: .2s;
+}
+
+.footer-mail a:hover {
+  -webkit-transition: .2s;
+  transition: .2s;
+  color: #0075FF;
+  border-bottom: 1px dashed #0075FF;
 }
 
 .footer-mail-wraper {
