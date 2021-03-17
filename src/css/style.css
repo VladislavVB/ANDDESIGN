@@ -432,10 +432,6 @@ button:hover {
   margin-bottom: 0;
 }
 
-.plan-cards {
-  position: relative;
-}
-
 .plan-card {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -447,6 +443,35 @@ button:hover {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+}
+
+.plan-card-air {
+  height: 10px;
+  border-top: 1px dashed #C4C4C4;
+  width: 750px;
+  z-index: 5;
+  position: absolute;
+  right: 143px;
+  top: -1px;
+}
+
+.plan-card-air-parent {
+  position: relative;
+}
+
+.plan-card-air-left {
+  position: absolute;
+  height: 80px;
+  width: 103px;
+  left: 142px;
+  top: -1px;
+  border-top: 1px dashed #C4C4C4;
+  border-left: 1px dashed #C4C4C4;
+  border-top-left-radius: 80px;
+}
+
+.plan-card-bottom {
+  margin-top: 80px;
 }
 
 .plan-card-circle {
@@ -507,7 +532,7 @@ button:hover {
   margin-left: 1.8px;
 }
 
-.plan-card-border-right-white {
+.plan-card-border-right-white-left {
   position: absolute;
   width: 50%;
   height: 101%;

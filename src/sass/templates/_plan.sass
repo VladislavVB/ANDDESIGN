@@ -3,7 +3,7 @@
     // border-top: 1px dashed $gray
     // border-radius: 120px
     // background:  url('../img/plan.png') 56% no-repeat
-    position: relative
+    // position: relative
   &-card
     display: flex
     justify-content: center
@@ -14,8 +14,27 @@
       // height: 170px
       // border-top: 1px dashed $gray
       // border-right: 1px dashed $gray
-      // border-bottom: 1px dashed $gray
-      // border-radius: 85px
+      height: 10px
+      border-top: 1px dashed $gray
+      width: 750px
+      z-index: 5
+      position: absolute
+      right: 143px
+      top: -1px
+      &-parent
+        position: relative
+      &-left
+        position: absolute
+        height: 80px
+        width: 103px
+        left: 142px
+        top: -1px
+        border-top: 1px dashed $gray
+        border-left: 1px dashed $gray
+        border-top-left-radius: 80px
+    &-bottom
+      margin-top: 80px
+
     &-circle
       width: 20px !important
       height: 20px !important
@@ -64,13 +83,20 @@
         margin-top: 17px
         margin-left: 1.8px
         &-white
-          position: absolute
-          width: 50%
-          height: 101%
-          left: 0
-          background-color: $white
-          z-index: 4
-          // top: -1px
+          &-left
+            position: absolute
+            width: 50%
+            height: 101%
+            left: 0
+            background-color: $white
+            z-index: 4
+          // &-right
+          //   position: absolute
+          //   width: 50%
+          //   height: 101%
+          //   right: 0
+          //   background-color: $white
+          //   z-index: 3
     &-description
       text-align: center
       font-weight: 400
