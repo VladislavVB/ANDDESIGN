@@ -45,9 +45,15 @@ button:hover {
   margin-bottom: 10px;
 }
 
+.air {
+  height: 80px;
+}
+
 .header {
   width: 100%;
   position: fixed;
+  z-index: 10;
+  background-color: #fff;
 }
 
 .header-top {
@@ -106,6 +112,7 @@ button:hover {
 .header-nav-wraper {
   background-color: #C4C4C4;
   padding: 0;
+  margin-bottom: -20px;
 }
 
 .header-nav ul {
@@ -130,7 +137,6 @@ button:hover {
 .hero {
   background: #F8F8F8 url("../img/Union.jpg") center center no-repeat;
   background-size: 42%;
-  margin-top: -25px;
   min-height: 524px;
 }
 
@@ -154,6 +160,10 @@ button:hover {
   line-height: 36px;
   font-weight: 400;
   margin-bottom: 31px;
+}
+
+.hero-wraper button {
+  width: 308px;
 }
 
 .services-card {
@@ -217,7 +227,7 @@ button:hover {
       -ms-flex-align: center;
           align-items: center;
   overflow: hidden;
-  max-height: 179.51px;
+  max-height: 165.51px;
 }
 
 .remotely-card-big {
@@ -231,6 +241,10 @@ button:hover {
      object-fit: cover;
   width: 100%;
   padding: 37px !important;
+}
+
+.remotely-card-middle img {
+  padding: 25% !important;
 }
 
 .remotely-card a {
@@ -283,6 +297,28 @@ button:hover {
           justify-content: space-between;
 }
 
+.calculate-description-input {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.calculate-description-input input {
+  height: 6px;
+  cursor: pointer;
+}
+
+.calculate-description-input label {
+  font-size: 16px;
+  line-height: 24px;
+  margin-top: 15px;
+  font-weight: 400;
+}
+
 .calculate-card p {
   margin: 0;
   line-height: 24px;
@@ -301,10 +337,27 @@ button:hover {
   margin-bottom: 0;
 }
 
-.questions-content button {
+.questions-wraper button {
   width: 428px;
   display: block;
   margin: auto;
+}
+
+.questions-content {
+  margin-bottom: 40px;
+  margin-top: 46px;
+}
+
+.questions-content p {
+  margin-top: 15px;
+}
+
+.questions-content span {
+  margin-left: 14px;
+  margin-right: 30px;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
 }
 
 .choose {
@@ -347,7 +400,7 @@ button:hover {
 }
 
 .plan-cards {
-  background: url("../img/plan.png") center center no-repeat;
+  background: url("../img/plan.png") 56% no-repeat;
 }
 
 .plan-card {
@@ -361,6 +414,11 @@ button:hover {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+}
+
+.plan-card-air {
+  margin-top: 60px;
+  margin-bottom: 60px;
 }
 
 .plan-card-circle {
@@ -511,6 +569,10 @@ button:hover {
   margin-top: 100px;
 }
 
+.team-card {
+  margin-bottom: 40px;
+}
+
 .team-card-img {
   width: 216px;
   height: 216px;
@@ -648,5 +710,272 @@ button:hover {
   font-weight: 400;
   font-size: 12px;
   margin-bottom: 10px;
+}
+
+@media screen and (max-width: 1200px) {
+  .remotely-card {
+    max-height: 137.67px;
+  }
+  .remotely-card-big {
+    max-height: 335px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .d-none-md {
+    display: none;
+  }
+  .section-title {
+    font-size: 20px;
+  }
+  .section-description {
+    font-size: 14px;
+  }
+  .button {
+    font-size: 14px;
+  }
+  .header-nav-wraper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    background-color: #fff;
+    margin-bottom: 0;
+  }
+  .hero-wraper h1 {
+    font-size: 36px;
+  }
+  .hero-wraper p {
+    font-size: 20px;
+  }
+  .services-card {
+    margin-top: 20px;
+  }
+  .services-card-description p {
+    font-size: 12px;
+  }
+  .remotely-card a {
+    font-size: 10px;
+  }
+  .calculate-description {
+    font-size: 14px;
+  }
+  .calculate-description-input label {
+    font-size: 14px;
+  }
+  .calculate-card p {
+    font-size: 14px;
+  }
+  .calculate-card p:nth-child(2n) {
+    font-size: 18px;
+  }
+  .questions-content p {
+    font-size: 14px;
+  }
+  .questions-content span {
+    font-size: 14px;
+  }
+  .choose-card-description {
+    margin-top: 20px;
+    font-size: 14px;
+  }
+  .plan-card-description {
+    font-size: 14px;
+  }
+  .work-card-text h4 {
+    font-size: 14px;
+    margin-bottom: 12px;
+  }
+  .work-card-text p {
+    font-size: 14px;
+    line-height: 18px;
+    margin-bottom: 8px;
+  }
+  .work-card-text button {
+    margin-top: 15px;
+  }
+  .smart-content-description h3 {
+    font-size: 16px;
+    line-height: 22px;
+    margin-bottom: 20px;
+  }
+  .smart-content-description p {
+    font-size: 14px;
+    line-height: 20px;
+  }
+  .smart-content-img {
+    min-height: 10px;
+  }
+  .team-card-img {
+    width: 150px;
+    height: 150px;
+  }
+  .team-card p {
+    font-size: 24px;
+  }
+  .team-card p:nth-child(3n) {
+    font-size: 14px;
+  }
+  .footer-item p {
+    font-size: 14px;
+  }
+  .footer-item a {
+    font-size: 14px;
+  }
+  .footer-title {
+    font-size: 20px;
+  }
+  .footer-content-img {
+    min-height: 10px;
+  }
+  .footer-content-description-img {
+    margin-right: 5px;
+  }
+  .footer-mail a {
+    font-size: 14px;
+  }
+  .footer-mail-wraper {
+    margin-bottom: 15px;
+  }
+  .footer-policy p {
+    font-size: 10px;
+  }
+  .nav-item {
+    text-align: right;
+  }
+  .nav-link {
+    font-size: 14px !important;
+    padding: 15px 0px !important;
+  }
+  .remotely-card {
+    max-height: 101px;
+  }
+  .remotely-card-big {
+    max-height: 335px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .button {
+    height: 40px;
+    font-size: 14px;
+    font-weight: 500;
+  }
+  .section-title {
+    font-size: 18px;
+  }
+  .hero {
+    min-height: 10px;
+  }
+  .hero-wraper {
+    padding-top: 50px;
+  }
+  .hero-wraper button {
+    margin-bottom: 20px;
+  }
+  .hero-wraper h1 {
+    font-size: 32px;
+  }
+  .hero-wraper p {
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .remotely-card {
+    max-height: 145px;
+  }
+  .calculate-cards {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .smart-content-description {
+    margin-top: 20px;
+  }
+  .team-cards {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .footer-content-description {
+    margin-top: 20px;
+  }
+  .work-card-text button {
+    width: 100%;
+  }
+  .questions-wraper button {
+    width: 100%;
+  }
+  .hero-wraper button {
+    width: 100%;
+  }
+  .remotely-card-big img {
+    padding: 11.5px !important;
+  }
+  .remotely-card-middle img {
+    padding: 11.5px !important;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .hero-wraper h1 {
+    font-size: 24px;
+  }
+  .hero-wraper p {
+    font-size: 14px;
+  }
+  .work-container {
+    padding-right: 25px;
+    padding-left: 25px;
+  }
+  .work-cards {
+    margin-top: 0;
+  }
+  .work-card-text {
+    margin-top: 0;
+  }
+  .work-card-text p {
+    font-size: 12px;
+  }
+  .work-control-prev img {
+    width: 15px;
+    height: 25px;
+  }
+  .work-control-next img {
+    width: 15px;
+    height: 25px;
+  }
+  .team-cards {
+    margin-top: 20px;
+  }
+  .team-card {
+    margin-bottom: 10px;
+  }
+  .team-card p {
+    margin-top: 10px;
+  }
+  .questions-wraper button {
+    font-size: 12px;
+  }
+  .choose-card-description {
+    min-height: 10px;
+    margin-bottom: 10px;
+  }
+  .calculate-cards {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .calculate-card p:nth-child(2n) {
+    margin-bottom: 10px;
+  }
 }
 /*# sourceMappingURL=style.css.map */
