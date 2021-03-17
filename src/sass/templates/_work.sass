@@ -1,0 +1,42 @@
+.work
+  overflow: hidden
+  background-color: $lightgray
+  &-cards
+    margin-top: 21px
+  &-card
+    &-text
+      margin-top: 15px
+      h4
+        font-weight: 700
+        font-size: 16px
+        line-height: 24px
+        margin-bottom: 24px
+      p
+        font-weight: 400
+        font-size: 16px
+        line-height: 24px
+
+      button
+        margin-top: 27px
+        width: 262px
+    &-imgs
+    &-img
+      max-height: 180px
+      img
+        width: 100%
+        object-fit: cover
+      &-big
+        max-height: 390px
+        img
+          width: 100%
+  &-control
+    &-prev
+      width: 10%
+      left: -10%
+    &-next
+      width: 10%
+      right: -10%
+    // position: relative
+.carousel-control-prev
+  transform: rotate(180deg)
+  right: -15% !important
