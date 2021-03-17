@@ -433,7 +433,7 @@ button:hover {
 }
 
 .plan-cards {
-  background: url("../img/plan.png") 56% no-repeat;
+  position: relative;
 }
 
 .plan-card {
@@ -447,11 +447,6 @@ button:hover {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-}
-
-.plan-card-air {
-  margin-top: 60px;
-  margin-bottom: 60px;
 }
 
 .plan-card-circle {
@@ -476,6 +471,49 @@ button:hover {
       -ms-flex-align: center;
           align-items: center;
   margin: auto;
+  background-color: #fff;
+  z-index: 2;
+  position: relative;
+}
+
+.plan-card-circle-wraper::after {
+  position: absolute;
+  content: '';
+  width: 251px;
+  left: 33px;
+  border-top: 1px dashed #C4C4C4;
+  z-index: 5;
+}
+
+.plan-card-circle-wraper-last {
+  position: relative;
+}
+
+.plan-card-circle-wraper-last::after {
+  position: absolute;
+  content: '';
+  width: 0;
+}
+
+.plan-card-border-right {
+  width: 100%;
+  height: 170px;
+  border-radius: 85px;
+  border-right: 1px dashed #C4C4C4;
+  border-top: 1px dashed #C4C4C4;
+  border-bottom: 1px dashed #C4C4C4;
+  position: relative;
+  margin-top: 17px;
+  margin-left: 1.8px;
+}
+
+.plan-card-border-right-white {
+  position: absolute;
+  width: 50%;
+  height: 101%;
+  left: 0;
+  background-color: #fff;
+  z-index: 4;
 }
 
 .plan-card-description {

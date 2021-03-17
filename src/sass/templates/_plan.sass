@@ -2,14 +2,20 @@
   &-cards
     // border-top: 1px dashed $gray
     // border-radius: 120px
-    background:  url('../img/plan.png') 56% no-repeat
+    // background:  url('../img/plan.png') 56% no-repeat
+    position: relative
   &-card
     display: flex
     justify-content: center
     flex-direction: column
     &-air
-      margin-top: 60px
-      margin-bottom: 60px
+      // position: absolute
+      // margin-top: 16px
+      // height: 170px
+      // border-top: 1px dashed $gray
+      // border-right: 1px dashed $gray
+      // border-bottom: 1px dashed $gray
+      // border-radius: 85px
     &-circle
       width: 20px !important
       height: 20px !important
@@ -28,6 +34,43 @@
         justify-content: center
         align-items: center
         margin: auto
+        background-color: $white
+        z-index: 2
+        //начало линий
+        position: relative
+        &::after
+          position: absolute
+          content: ''
+          width: 251px
+          left: 33px
+          border-top: 1px dashed $gray
+          z-index: 5
+        &-last
+          position: relative
+          &::after
+            position: absolute
+            content: ''
+            width: 0
+            
+    &-border
+      &-right
+        width: 100%
+        height: 170px
+        border-radius: 85px
+        border-right: 1px dashed $gray
+        border-top: 1px dashed $gray
+        border-bottom: 1px dashed $gray
+        position: relative
+        margin-top: 17px
+        margin-left: 1.8px
+        &-white
+          position: absolute
+          width: 50%
+          height: 101%
+          left: 0
+          background-color: $white
+          z-index: 4
+          // top: -1px
     &-description
       text-align: center
       font-weight: 400
