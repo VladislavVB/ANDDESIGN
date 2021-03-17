@@ -448,7 +448,7 @@ button:hover {
 .plan-card-air {
   height: 10px;
   border-top: 1px dashed #C4C4C4;
-  width: 750px;
+  width: 728px;
   z-index: 5;
   position: absolute;
   right: 143px;
@@ -461,17 +461,17 @@ button:hover {
 
 .plan-card-air-left {
   position: absolute;
-  height: 80px;
-  width: 103px;
+  height: 125px;
+  width: 125px;
   left: 142px;
   top: -1px;
   border-top: 1px dashed #C4C4C4;
   border-left: 1px dashed #C4C4C4;
-  border-top-left-radius: 80px;
+  border-top-left-radius: 120px;
 }
 
 .plan-card-bottom {
-  margin-top: 80px;
+  margin-top: 123px;
 }
 
 .plan-card-circle {
@@ -824,9 +824,39 @@ button:hover {
   .remotely-card-big {
     max-height: 335px;
   }
+  .plan-card-circle-wraper::after {
+    width: 205px;
+  }
+  .plan-card-circle-wraper-last::after {
+    width: 0;
+  }
+  .plan-card-air {
+    right: 121px;
+    width: 593px;
+  }
+  .plan-card-air-left {
+    left: 119.5px;
+  }
 }
 
 @media screen and (max-width: 992px) {
+  .plan-card-circle-wraper::after {
+    width: 145px;
+  }
+  .plan-card-circle-wraper-last::after {
+    width: 0;
+  }
+  .plan-card-air {
+    right: 100px;
+    width: 402px;
+  }
+  .plan-card-air-left {
+    left: 90.5px;
+  }
+  .plan-card-border-right {
+    margin-left: -8.2px;
+    margin-top: 16px;
+  }
   .d-none-md {
     display: none;
   }
@@ -963,6 +993,24 @@ button:hover {
 }
 
 @media screen and (max-width: 768px) {
+  .plan-card {
+    margin-top: 100px;
+  }
+  .plan-card-bottom {
+    margin-top: 100px;
+  }
+  .plan-card-circle-wraper::after {
+    -webkit-transform: rotate(270deg);
+            transform: rotate(270deg);
+    left: -56px;
+    top: 104px;
+  }
+  .plan-card-border-right {
+    display: none;
+  }
+  .plan-card-air-parent {
+    display: none;
+  }
   .button {
     height: 40px;
     font-size: 14px;
@@ -1030,6 +1078,14 @@ button:hover {
 }
 
 @media screen and (max-width: 576px) {
+  .plan-card-circle-wraper::after {
+    left: -71px;
+    top: 120px;
+    width: 175px;
+  }
+  .plan-card-circle-wraper-last::after {
+    width: 0;
+  }
   .hero-wraper h1 {
     font-size: 24px;
   }

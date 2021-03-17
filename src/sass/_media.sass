@@ -4,7 +4,41 @@
       max-height: 137.67px
       &-big
         max-height: 335px
+  .plan
+    &-card
+      &-circle
+        &-wraper
+          &::after
+            width: 205px
+          &-last
+            &::after
+              width: 0
+      &-air
+        right: 121px
+        width: 593px
+        &-left
+          left: 119.5px
 @media screen and ( max-width: 992px )
+  .plan
+    &-card
+      &-circle
+        &-wraper
+          &::after
+            width: 145px
+          &-last
+            &::after
+              width: 0
+      &-air
+        right: 100px
+        width: 402px
+        &-left
+          left: 90.5px
+      &-border
+        &-right
+          margin-left: -8.2px
+          margin-top: 16px
+
+
   .d-none-md
     display: none
   .section
@@ -131,6 +165,23 @@
       &-big
         max-height: 335px
 @media screen and ( max-width: 768px )
+  .plan
+    &-card
+      margin-top: 100px
+      &-bottom
+        margin-top: 100px
+      &-circle
+        &-wraper
+          &::after
+            transform: rotate(270deg)
+            left: -56px
+            top: 104px
+      &-border
+        &-right
+          display: none
+      &-air
+        &-parent
+          display: none
   .button
     height: 40px
     font-size: 14px
@@ -190,6 +241,17 @@
         img
           padding: 11.5px !important
 @media screen and ( max-width: 576px )
+  .plan
+    &-card
+      &-circle
+        &-wraper
+          &::after
+            left: -71px
+            top: 120px
+            width: 175px
+          &-last
+            &::after
+              width: 0
   .hero
     &-wraper 
       h1
