@@ -407,7 +407,7 @@ button:hover a {
   margin-top: 15px;
 }
 
-.questions-content span {
+.questions-content label {
   margin-left: 14px;
   margin-right: 30px;
   font-size: 16px;
@@ -935,7 +935,7 @@ button:hover a {
   .questions-content p {
     font-size: 14px;
   }
-  .questions-content span {
+  .questions-content label {
     font-size: 14px;
   }
   .choose-card-description {
