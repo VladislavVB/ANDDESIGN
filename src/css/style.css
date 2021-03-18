@@ -991,8 +991,28 @@ button:hover a {
   margin-bottom: 27px;
 }
 
-.modal-custom-dialog-content-description form input:nth-child(3n) {
-  margin-bottom: 46px;
+.modal-custom-dialog-content-description form select {
+  height: 42px;
+  width: 100%;
+  background-color: #F8F8F8;
+  color: #000;
+  border: 1px solid #777777;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 18px;
+  line-height: 20px;
+  font-weight: 400;
+  margin-bottom: 27px;
+}
+
+.modal-custom-dialog-content-description form select::after {
+  width: 10px;
+  height: 2px;
+  background-color: #C4C4C4;
 }
 
 .modal-custom-dialog-content-description form button {
