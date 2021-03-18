@@ -18,7 +18,7 @@
       <div class="row header-top">
         <div class="col-7">
           <div class="header-logo-wraper">
-            <a href="#home" class="header-logo">AND</a>
+            <a href="#srchome" class="header-logo">AND</a>
             <div class="header-logo-description">Архитектура и дизайн</div>
           </div>
         </div>
@@ -26,7 +26,7 @@
           <div class="header-contact">
             <a href="tel:+79990001122">8 999 000 11 22</a>
             <div class="header-mail-link">
-              <a href="tel:+79990001122">заказать обратный звонок</a>
+              <a class="button-modal">заказать обратный звонок</a>
             </div>
           </div>
         </div>
@@ -38,18 +38,21 @@
             </button>
             <div class="collapse navbar-collapse header-nav" id="navbarNav">
               <ul class="navbar-nav">
-
+                
                 <li class="nav-item ">
-                  <a class="nav-link" href="#home">Главная<span class="sr-only">(current)</span></a>
+                  <a class="nav-link" href="#srchome">Главная<span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#prodject">Наши проекты</a>
+                  <a class="nav-link" href="#srcprodject">Наши проекты</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#service">Наши услуги</a>
+                  <a class="nav-link" href="#srcservice">Наши услуги</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#contact">Контакты</a>
+                  <a class="nav-link" href="#srccontact">Контакты</a>
+                </li>
+                <li class="nav-item header-item-mobile">
+                  <a href="tel:+79990001122">8 999 000 11 22</a>
                 </li>
               </ul>
             </div>
@@ -60,7 +63,7 @@
     </div>
   </header>
   <!-- пространство  -->
-  <section id="home" class="air"></section>
+  <section id="srchome" class="air"></section>
   <!-- пространство  -->
   <section class="hero">
     <div class="container">
@@ -68,12 +71,12 @@
         <h1>AND - Студия дизайна</h1>
         <p>Разработаем дизайн вашей квартиры или дома за 20 дней по лучшей цене. Нажмите на кнопку внизу и рассчитайте
           стоимость проекта за 1 минуту!</p>
-        <button class="button"><a href="#calculate">Рассчитать проект</a></button>
+        <button class="button"><a href="#srccalculate">Рассчитать проект</a></button>
       </div>
     </div>
   </section>
 
-  <section id="service" class="section services">
+  <section id="srcservice" class="section services">
     <div class="container">
       <div class="services-wraper">
         <h3 class="section-title">Какие услуги мы вам можем предложить?</h3>
@@ -149,7 +152,7 @@
       </div>
     </div>
   </section>
-  <section id="prodject" class="section remotely">
+  <section id="srcprodject" class="section remotely">
     <div class="container">
       <div class="remotely-wraper">
         <h3 class="section-title">Реализуем проекты дистанционно</h3>
@@ -225,7 +228,7 @@
         </div>
       </div>
   </section>
-  <section id="calculate" class="section calculate">
+  <section id="srccalculate" class="section calculate">
     <div class="container">
       <div class="calculate-wraper">
         <h3 class="section-title">Заказать дизайн-проект интерьера</h3>
@@ -345,31 +348,31 @@
           <!-- <label for=""></label> -->
           <p>Устраивает ли вас текущее планировочное решение?</p>
           <input id="radioOneYes" type="radio">
-          <label for="radioOneYes" >Да</label>
+          <label for="radioOneYes">Да</label>
           <input id="radioOneNo" type="radio">
           <label for="radioOneNo">Нет</label>
           <!-- 2 -->
           <p>Устраивает ли вас текущее планировочное решение?</p>
           <input id="radioTwoYes" type="radio">
-          <label for="radioTwoYes" >Да</label>
+          <label for="radioTwoYes">Да</label>
           <input id="radioTwoNo" type="radio">
           <label for="radioTwoNo">Нет</label>
           <!-- 3 -->
           <p>Устраивает ли вас текущее планировочное решение?</p>
           <input id="radioThreeYes" type="radio">
-          <label for="radioThreeYes" >Да</label>
+          <label for="radioThreeYes">Да</label>
           <input id="radioThreeNo" type="radio">
           <label for="radioThreeNo">Нет</label>
           <!-- 4 -->
           <p>Устраивает ли вас текущее планировочное решение?</p>
           <input id="radioFourYes" type="radio">
-          <label for="radioFourYes" >Да</label>
+          <label for="radioFourYes">Да</label>
           <input id="radioFourNo" type="radio">
           <label for="radioFourNo">Нет</label>
           <!-- кнопка -->
 
         </div>
-        <button class="button">
+        <button class="button button-modal">
           <a href="#calculate">Получить рассчет стоимости прямо сейчас</a> </button>
       </div>
     </div>
@@ -705,7 +708,7 @@
       </div>
     </div>
   </section>
-  <footer id="contact" class="section footer">
+  <footer id="srccontact" class="section footer">
     <div class="container">
       <div class="row footer-content">
         <div class="col-md-6">
@@ -780,6 +783,36 @@
       </div>
     </div>
   </footer>
+
+  <div class="modal-custom">
+    <div class="container">
+      <div class="modal-custom-dialog">
+        <div class="modal-custom-dialog-content">
+          <div class="modal-custom-dialog-content-close"></div>
+          <div class="row">
+            <div class="col-md-7">
+              <div class="modal-custom-dialog-content-description">
+                <h3>Заказать обратный звонок</h3>
+                <p>Пожалуйста, укажите ваши контактные данные и кратко опишите задачу</p>
+                <form action="#">
+                  <input placeholder="*Имя" type="text">
+                  <input placeholder="*Телефон" type="number">
+                  <input placeholder="*Тема" type="text">
+                  <button class="button"><a href="#">Заказать звонок</a></button>
+                </form>
+              </div>
+            </div>
+            <div class="col-md-5 d-none-sm">
+              <div class="modal-custom-dialog-content-description-img">
+                <img src="img/Union.jpg" alt="">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
 </body>
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
   integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>

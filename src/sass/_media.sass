@@ -19,6 +19,20 @@
         &-left
           left: 119.5px
 @media screen and ( max-width: 992px )
+  .modal
+    &-custom
+      &-dialog
+        &-content
+          &-description
+            h3
+              font-size: 20px
+            p
+              font-size: 14px
+            form
+              input
+                font-size: 14px
+              button
+                width: 100%
   .plan
     &-card
       &-circle
@@ -38,7 +52,6 @@
           margin-left: -8.2px
           margin-top: 16px
 
-
   .d-none-md
     display: none
   .section
@@ -55,8 +68,11 @@
         justify-content: flex-end
         background-color: $white
         margin-bottom: 0
+    &-item
+      &-mobile
+        display: block
   .hero
-    &-wraper 
+    &-wraper
       h1
         font-size: 36px
       p
@@ -64,26 +80,26 @@
   .services
     &-card
       margin-top: 20px
-      &-description 
+      &-description
         p
           font-size: 12px
   .remotely
-    &-card 
+    &-card
       a
         font-size: 10px
   .calculate
     &-description
       font-size: 14px
-      &-input 
+      &-input
         label
           font-size: 14px
-    &-card 
+    &-card
       p
         font-size: 14px
-      p:nth-child(2n) 
+      p:nth-child(2n)
         font-size: 18px
   .questions
-    &-content 
+    &-content
       p
         font-size: 14px
       label
@@ -99,7 +115,7 @@
         font-size: 14px
   .work
     &-card
-      &-text 
+      &-text
         h4
           font-size: 14px
           margin-bottom: 12px
@@ -111,7 +127,7 @@
           margin-top: 15px
   .smart
     &-content
-      &-description 
+      &-description
         h3
           font-size: 16px
           line-height: 22px
@@ -122,7 +138,7 @@
       &-img
         min-height: 10px
   .team
-    &-card 
+    &-card
       &-img
         width: 150px
         height: 150px
@@ -131,7 +147,7 @@
       p:nth-child(3n)
         font-size: 14px
   .footer
-    &-item 
+    &-item
       p
         font-size: 14px
       a
@@ -144,12 +160,12 @@
       &-description
         &-img
           margin-right: 5px
-    &-mail 
+    &-mail
       a
         font-size: 14px
       &-wraper
         margin-bottom: 15px
-    &-policy 
+    &-policy
       p
         font-size: 10px
 
@@ -165,6 +181,8 @@
       &-big
         max-height: 335px
 @media screen and ( max-width: 768px )
+  .d-none-sm
+    display: none
   .plan
     &-cards
       margin-top: 0
@@ -225,15 +243,15 @@
         margin-top: 20px
   .work
     &-card
-      &-text 
+      &-text
         button
           width: 100%
   .questions
     &-wraper
       button
-        width: 100% 
+        width: 100%
   .hero
-    &-wraper 
+    &-wraper
       button
         width: 100%
   .remotely
@@ -241,10 +259,17 @@
       &-big
         img
           padding: 11.5px !important
-      &-middle 
+      &-middle
         img
           padding: 11.5px !important
 @media screen and ( max-width: 576px )
+  .modal
+    &-custom
+      &-dialog
+        margin-top: 15px
+        margin-bottom: 15px
+        &-content
+          padding: 10px 10px
   .plan
     &-card
       &-circle
@@ -257,7 +282,7 @@
             &::after
               width: 0
   .hero
-    &-wraper 
+    &-wraper
       h1
         font-size: 24px
       p
@@ -290,7 +315,7 @@
       p
         margin-top: 10px
   .questions
-    &-wraper 
+    &-wraper
       button
         font-size: 12px
   .choose
@@ -301,6 +326,6 @@
   .calculate
     &-cards
       flex-direction: column
-    &-card 
+    &-card
       p:nth-child(2n)
         margin-bottom: 10px

@@ -9,6 +9,16 @@
     display: flex
     justify-content: center
     flex-direction: column
+    transition: .5s
+    &:hover
+      .plan
+        &-card
+          &-circle
+            transition: .5s
+            background-color: $blue
+            &-wraper
+              transition: .5s
+              border: 1px dashed $blue
     &-air
       // position: absolute
       // margin-top: 16px
@@ -43,7 +53,7 @@
       // margin: 7px
       // margin: auto
       border-radius: 50%
-      
+      transition: .5s
       background-color: $gray
       &-wraper
         border-radius: 50%
@@ -56,6 +66,7 @@
         margin: auto
         background-color: $white
         z-index: 2
+        transition: .5s
         //начало линий
         position: relative
         &::after
