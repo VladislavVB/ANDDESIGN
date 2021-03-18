@@ -3,6 +3,17 @@
   font-family: 'Montserrat', sans-serif;
 }
 
+body::-webkit-scrollbar {
+  width: 15px;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #00000041;
+  border-radius: 10px;
+  width: 10px;
+  border: 6px solid #ffffff;
+}
+
 a:hover {
   text-decoration: none;
 }
@@ -140,6 +151,7 @@ button:hover a {
 .header-logo-description {
   font-weight: 200;
   font-size: 12px;
+  margin-top: -6px;
 }
 
 .header-contact {
@@ -171,7 +183,7 @@ button:hover a {
   background-color: #C4C4C4;
   padding: 0;
   margin-bottom: -20px;
-  margin-top: 9px;
+  margin-top: 12px;
 }
 
 .header-nav ul {
@@ -365,6 +377,7 @@ button:hover a {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  margin-bottom: 27px;
 }
 
 .calculate-description-input input {
